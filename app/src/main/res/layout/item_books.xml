@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/purple_700"
+    app:cardCornerRadius="8dp"
+    android:padding="8dp"
+    android:layout_margin="4dp"
+    app:cardElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/imagebook"
+            android:layout_width="100dp"
+            android:layout_height="160dp"
+            android:layout_margin="8dp"
+            tools:src="@drawable/richdad"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/titleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/imagebook"
+            android:layout_marginTop="10dp"
+            tools:text="Rich Dad Poor Dad"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/authorTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleTV"
+            android:layout_toEndOf="@id/imagebook"
+            android:text="Author: "
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/authorTV"
+            android:layout_below="@id/titleTV"
+            android:layout_marginStart="4dp"
+            tools:text="Robert"/>
+        
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/authorTV"
+            android:layout_toEndOf="@id/imagebook"
+            tools:rating="2"
+            style="@style/Widget.AppCompat.RatingBar.Small"/>
+
+        <TextView
+            android:id="@+id/summaryTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dp"
+            android:layout_toEndOf="@id/imagebook"
+            android:maxLines="4"
+            android:textSize="12sp"
+            android:ellipsize="end"
+            android:layout_marginRight="4dp"
+            tools:text="blaaaaaaasasdasdasdadasdasdsdasdasdasdasdsasdasdassdfghtjtjhbhkmijkmnhgbfvhahahahahahahahahahahahahhaahhahhahahhahahahahhahahahhahahahahahahahhahahheueuueueueueueueeueueeueueueueiiiiiiiiiiiiiiiiiiiiiiivv"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Summary"
+             android:textStyle="bold"
+            android:layout_above="@id/summaryTV"
+            android:layout_toEndOf="@id/imagebook"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
